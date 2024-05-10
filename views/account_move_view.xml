@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_invoice_document_inherit_sale_inherit2" inherit_id="account.report_invoice_document">*
+        <xpath expr="//th[@name='th_priceunit']" position="attributes">
+            <attribute name="style">white-space: nowrap;</attribute>
+        </xpath>
+        <xpath expr="//td[@name='account_invoice_line_name']" position="attributes">
+            <attribute name="style">font-size: 20px</attribute>
+        </xpath>
+        <xpath expr="//span[@t-field='line.quantity']" position="attributes">
+            <attribute name="style">font-size: 10px</attribute>
+        </xpath>
+        <xpath expr="//span[@t-field='line.product_uom_id']" position="attributes">
+            <attribute name="style">font-size: 10px</attribute>
+        </xpath>
+        <xpath expr="//span[@t-field='line.price_unit']" position="attributes">
+            <attribute name="style">font-size: 10px</attribute>
+        </xpath>
+        <xpath expr="//span[@t-field='line.discount']" position="attributes">
+            <attribute name="style">font-size: 10px</attribute>
+        </xpath>
+        <xpath expr="//span[@id='line_tax_ids']" position="attributes">
+            <attribute name="style">font-size: 10px</attribute>
+        </xpath>
+        <xpath expr="//span[@t-field='line.price_subtotal']" position="attributes">
+            <attribute name="style">font-size: 10px</attribute>
+        </xpath>
+        <xpath expr="//span[@t-field='line.price_total']" position="attributes">
+            <attribute name="style">font-size: 10px</attribute>
+        </xpath>
+        <xpath expr="//span[@t-esc='current_subtotal']" position="attributes">
+            <attribute name="style">font-size: 10px</attribute>
+        </xpath>
+        <xpath expr="//span[@t-field='o.narration']" position="attributes">
+            <attribute name="style">font-size: 10px</attribute>
+        </xpath>
+        <xpath expr="//div[@name='comment']" position="after">
+            <div>
+                <span t-field="o.invoice_note" style="font-size:10px"/>
+            </div>
+        </xpath>
+    </template>
+    <template id="external_layout_standard_s-dev" inherit_id="web.external_layout_standard">
+        <xpath expr="//div[3]/div/div" position="attributes">
+            <attribute name="style">font-size:10px</attribute>
+        </xpath>
+        <xpath expr="//div[3]/div/div[2]" position="attributes">
+            <attribute name="style">text-align: end !important;margin-top: -30px !important;font-size: 8px</attribute>
+        </xpath>
+    </template>
+</odoo>
