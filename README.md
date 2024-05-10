@@ -1,4 +1,4 @@
-# Module Odoo S-Dev : Personnalisation du Front-end des Factures
+# Module Odoo S-DEV : Personnalisation du Front-end des Factures
 
 Ce module Odoo, développé par S-DEV, vise à fournir des fonctionnalités de personnalisation du front-end des factures dans Odoo. Il permet aux utilisateurs de modifier et d'améliorer l'apparence des factures générées dans le système Odoo, offrant ainsi une expérience plus personnalisée et professionnelle pour les clients.
 
